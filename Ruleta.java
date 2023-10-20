@@ -7,6 +7,6 @@ public class Ruleta {
     }
 
     public int girar() {
-        return random.nextInt(37); // Returns a number between 0 and 36
+        return random.nextInt(37); 
     }
 }

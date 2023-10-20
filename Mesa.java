@@ -25,6 +25,6 @@ public class Mesa {
                 }
             }
         }
-        apuestas.clear(); // Clear the bets for the next round
+        apuestas.clear(); 
     }
 }
