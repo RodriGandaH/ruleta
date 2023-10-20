@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=int\ solicitarSaldoInicial()
+comment3.params=jugador\ mesa
+comment3.target=void\ realizarApuesta(Jugador,\ Mesa)
+comment4.params=
+comment4.target=boolean\ preguntarSiContinuar()
+comment5.params=jugador
+comment5.target=void\ agregarSaldo(Jugador)
+comment6.params=
+comment6.target=void\ mostrarEstadisticas()
+comment7.params=jugador\ saldoAnterior
+comment7.target=void\ actualizarEstadisticas(Jugador,\ int)
+numComments=8

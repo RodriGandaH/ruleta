@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ApuestaColor
+comment1.params=cantidad\ jugador\ colorApostado
+comment1.target=ApuestaColor(int,\ Jugador,\ java.lang.String)
+comment2.params=resultado
+comment2.target=boolean\ ganador(int)
+numComments=3
