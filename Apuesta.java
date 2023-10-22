@@ -1,4 +1,7 @@
-public abstract class Apuesta {
+
+
+public abstract class Apuesta
+{
     protected int cantidad;
     protected Jugador jugador;
 

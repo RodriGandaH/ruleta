@@ -1,5 +1,7 @@
 #BlueJ class context
 comment0.target=Apuesta
-comment1.params=resultado
-comment1.target=boolean\ ganador(int)
-numComments=2
+comment1.params=cantidad\ jugador
+comment1.target=Apuesta(int,\ Jugador)
+comment2.params=resultado
+comment2.target=boolean\ ganador(int)
+numComments=3

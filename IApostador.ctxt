@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IApostador
+comment1.params=apuesta
+comment1.target=void\ ganaApuesta(Apuesta)
+comment2.params=apuesta
+comment2.target=void\ pierdeApuesta(Apuesta)
+numComments=3

@@ -1,4 +1,4 @@
-public class Jugador {
+public class Jugador implements IApostador {
     private String nombre;
     private int saldo;
 
@@ -7,10 +7,12 @@ public class Jugador {
         this.saldo = saldoInicial;
     }
 
+    @Override
     public void ganaApuesta(Apuesta apuesta) {
         this.saldo += apuesta.cantidad * 2; 
     }
 
+    @Override
     public void pierdeApuesta(Apuesta apuesta) {
         this.saldo -= apuesta.cantidad;
     }
