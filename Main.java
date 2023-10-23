@@ -52,6 +52,10 @@ public class Main {
     }
     
     private static void realizarApuesta(Jugador jugador, Mesa mesa) {
+        
+        Apuesta apuestaColor = new ApuestaColor(0, jugador, "rojo"); 
+        Apuesta apuestaNumero = new ApuestaNumero(0, jugador, 0); 
+        
         int cantidad = -1;
         do {
             System.out.print("¿Cuanto te gustaria apostar? ");
@@ -97,7 +101,8 @@ public class Main {
                 }
             } while (numero < 0 || numero > 36);
             
-            mesa.agregarApuesta(jugador, new ApuestaNumero(cantidad, jugador, numero));
+            apuestaNumero = new ApuestaNumero(cantidad, jugador, numero);
+            mesa.agregarApuesta(jugador, apuestaNumero);
         } else if (opcion == 2) {
             String color = "";
             do {
@@ -115,7 +120,8 @@ public class Main {
                 }
             } while (!color.equals("rojo") && !color.equals("verde"));
             
-            mesa.agregarApuesta(jugador, new ApuestaColor(cantidad, jugador, color));
+            apuestaColor = new ApuestaColor(cantidad, jugador, color);
+            mesa.agregarApuesta(jugador, apuestaColor);
         }
     }
 
