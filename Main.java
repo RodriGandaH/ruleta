@@ -6,11 +6,13 @@ public class Main {
         private static int rondasGanadas = 0;
         private static int rondasPerdidas = 0;
         private static int gananciaMasAlta = 0;
+        private static String nombreJugador;
     
     public static void main(String[] args) {
              System.out.println("Bienvenido al juego de la Ruleta!");
             System.out.print("Por favor, introduce tu nombre: ");
             String nombre = scanner.nextLine();
+            nombreJugador = nombre;
             Jugador jugador = new Jugador(nombre, solicitarSaldoInicial());
             Mesa mesa = new Mesa();
             Ruleta ruleta = new Ruleta();
@@ -38,7 +40,7 @@ public class Main {
     private static int solicitarSaldoInicial() {
             int saldoInicial = -1;
             do {
-                System.out.print("¿Cuanto dinero te gustaria usar para jugar? ");
+                System.out.print("Hola, "+nombreJugador+"! ¿Cuanto dinero te gustaria usar para jugar? ");
                 try {
                     saldoInicial = Integer.parseInt(scanner.nextLine());
                     if (saldoInicial < 0) {
